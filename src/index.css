@@ -27,6 +27,24 @@ body {
   color: #61dafb;
 }
 
+.column {
+  float: left;
+}
+
+.left {
+  width: 65%;
+}
+
+.right {
+  padding-top: 18px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;

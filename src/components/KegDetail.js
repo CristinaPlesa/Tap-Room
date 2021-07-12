@@ -11,7 +11,7 @@ function KegDetail(props){
       <p><em>Brand: {keg.brand}</em></p>
       <p><em>Price per Pint: {keg.price}</em></p>
       <p><em>Alcohol Content: {keg.alcoholContent}</em></p>
-      <p><em>Pints left over: </em></p>
+      <p><em>Pints left over: {keg.pints}</em></p>
       <button onClick={ props.onClickingEdit }>Update Keg</button>
       <button onClick={()=> onClickingDelete(keg.id) }>Close Keg</button>
       <hr/>

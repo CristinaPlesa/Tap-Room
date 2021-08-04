@@ -8,6 +8,7 @@ function Keg(props){
       <div className="row">
         <div className="column left" onClick = {() => props.whenKegClicked(props.id)}>
           <h3><span className="Detail-link">{props.name} - {props.price}</span></h3>
+          <h3>Pints: {props.pints}</h3>
         </div>
         <div className="column right">
         <button onClick={() => props.whenSellClicked(props.id)}>Sell a Pint!</button>  

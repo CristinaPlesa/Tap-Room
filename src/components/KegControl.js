@@ -48,7 +48,8 @@ class KegControl extends React.Component {
     if (selectedKeg.pints > 0) {
       selectedKeg.pints -= 1;
       this.setState({
-        selectedKeg: selectedKeg
+        masterKegList: this.state.masterKegList,
+        formVisibleOnPage: false
       });
     }
   }
